@@ -341,7 +341,7 @@ Feedback on this website would be great :D
             var card = '<div class="program-cards">';
             var kaid = "kaid_335279540512177885166674";
          
-            $.getJSON("https://www.khanacademy.org/api/internal/user/scratchpads?kaid=" + kaid + "&limit=100&callback=?", function(data) {
+            $.getJSON("https://www.khanacademy.org/api/internal/user/scratchpads?kaid=" + kaid + "&limit=1000&callback=?", function(data) {
                 data.scratchpads.forEach(function(sp) {
                     card+= '<a class="program-card" href="' + sp.url + '" target="_blank">';
                     card+= '<div class="program-card-thumb"><img src="https://www.khanacademy.org' + sp.thumb + '"></div>';
